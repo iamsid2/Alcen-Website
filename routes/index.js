@@ -22,16 +22,20 @@ router.get('/gallery', function(req, res, next) {
   res.render('main/gallery');
 });
 
-router.get('/blog-fullwidth', function(req, res, next) {
-  res.render('main/blog-fullwidth');
-});
+// router.get('/blog-fullwidth', function(req, res, next) {
+//   res.render('main/blog-fullwidth');
+// });
+//
+// router.get('/blog-left-sidebar', function(req, res, next) {
+//   res.render('main/blog-left-sidebar');
+// });
+//
+// router.get('/blog-right-sidebar', function(req, res, next) {
+//   res.render('main/blog-right-sidebar');
+// });
 
-router.get('/blog-left-sidebar', function(req, res, next) {
-  res.render('main/blog-left-sidebar');
-});
-
-router.get('/blog-right-sidebar', function(req, res, next) {
-  res.render('main/blog-right-sidebar');
+router.get('/Clients', function(req, res, next) {
+  res.render('main/clients');
 });
 
 router.get('/contact', function(req, res, next) {

@@ -1,0 +1,60 @@
+
+<style>
+/* * {
+  box-sizing: border-box;
+} */
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+<% layout('layout') -%>
+
+        <!--
+        ==================================================
+            Clients Section Start
+        ================================================== -->
+        <section id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="subtitle text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".3s">Our Happy Clients</h1>
+                        <h1 class="subtitle-des text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".5s"><b>These are some of our esteemed clients.</b></h1>
+                        <!-- <div id="clients-logo" class="owl-carousel">
+                            <div>
+                                <img src="images/clients/logo-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="images/clients/logo-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="images/clients/logo-3.jpg" alt="">
+                            </div>
+                        </div> -->
+
+
+                      <div class="row">
+                        <div class="column">
+                          <img src="images/clients/logo-1.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="images/clients/logo-2.jpg" alt="Forest" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="images/clients/logo-3.jpg" alt="Mountains" style="width:100%">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>

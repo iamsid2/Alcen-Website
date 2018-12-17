@@ -435,7 +435,7 @@ a:hover {
 }
 
 .about-feature .block {
-  color: #fff;
+  color: black;
   width: 33.33%;
   padding: 5%;
   float: left;
@@ -446,15 +446,15 @@ a:hover {
 }
 
 .about-feature .about-feature-1 {
-  background: #02bdd5;
+  background: #fff;
 }
 
 .about-feature .about-feature-2 {
-  background: #00B0C7;
+  background: #fff;
 }
 
 .about-feature .about-feature-3 {
-  background: #00A6BB;
+  background: #fff;
 }
 
 .works {

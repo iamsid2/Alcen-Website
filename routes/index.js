@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var mongoose = require('mongoose');
+const contactModel = require('../models/contact');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,8 +12,8 @@ router.get('/about', function(req, res, next) {
   res.render('main/about');
 });
 
-router.get('/service', function(req, res, next) {
-  res.render('main/service');
+router.get('/products', function(req, res, next) {
+  res.render('main/products');
 });
 
 router.get('/404', function(req, res, next) {
@@ -34,7 +36,7 @@ router.get('/gallery', function(req, res, next) {
 //   res.render('main/blog-right-sidebar');
 // });
 
-router.get('/Clients', function(req, res, next) {
+router.get('/clients', function(req, res, next) {
   res.render('main/clients');
 });
 
@@ -50,5 +52,19 @@ router.get('/single-post', function(req, res, next) {
   res.render('main/single-post');
 });
 
+router.post('/contact', function(req,res,next) {
+  var contact = new contactModel();
+  contact.name = req.body.name;
+  contact.email = req.body.email;
+  contact.subject = req.body.subject;
+  contact.message = req.body.message;
+
+  contact.save(function(err){
+  if(err){
+    return next(err);
+  }
+})
+console.log(req.body)
+});
 
 module.exports = router;
